@@ -2,6 +2,7 @@ import { useAuth } from "context/auth-context";
 import { FormEvent } from "react";
 
 export const LoginScreen = () => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { user, login } = useAuth();
 
   const handleSubmit: (event: FormEvent<HTMLFormElement>) => void = (event) => {
