@@ -1,5 +1,6 @@
 import { useAuth } from "context/auth-context";
-import { Form, Button, Input } from "antd";
+import { Form, Input } from "antd";
+import { LongButton } from "unauthenticated-app/index";
 
 export const RegisterScreen = () => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -24,9 +25,9 @@ export const RegisterScreen = () => {
         <Input placeholder={"密码"} type="password" id={"password"} />
       </Form.Item>
       <Form.Item>
-        <Button htmlType={"submit"} type={"primary"}>
+        <LongButton htmlType={"submit"} type={"primary"}>
           注册
-        </Button>
+        </LongButton>
       </Form.Item>
     </Form>
     // <form onSubmit={handleSubmit}>
