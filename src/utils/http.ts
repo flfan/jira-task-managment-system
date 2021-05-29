@@ -47,3 +47,25 @@ export const useHttp = () => {
   return (...[endpoint, config]: Parameters<typeof http>) =>
     http(endpoint, { ...config, token: user?.token });
 };
+
+// type httpType = 'name' | 'age';
+// type httpType2 = string | number;
+// type httpType3 = 'name1' & number;
+// type Person = {
+//   name: string
+//   age: number
+// }
+// type PartPerson = Partial<Person>;
+// type OmitPersonAge = Omit<PartPerson,'age'>
+
+// type httpTypeKey = keyof httpType;
+// type httpType2Key = keyof httpType2;
+// type httpType3Key = keyof httpType3;
+// type PersonKeys = keyof Person;
+
+// let person1: PersonKeys = 'age';
+// let http3: httpTypeKey = 'anchor';
+// let http1: httpType = 'age';
+// let http2: httpType2 = 'age';
+// console.log(http1);
+// console.log(http2);
